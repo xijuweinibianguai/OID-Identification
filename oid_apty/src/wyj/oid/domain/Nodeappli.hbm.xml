@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+   <!-- 配置表与实体对象的关系 -->
+   <!-- package属性:填写一个包名.在元素内部凡是需要书写完整类名的属性,可以直接写简答类名了. -->
+<hibernate-mapping package="wyj.oid.domain" >
+	<!-- 
+		class元素: 配置实体与表的对应关系的
+			name: 完整类名
+			table:数据库表名
+	 -->
+	<class name="Nodeappli" table="node_apt1" >
+		<!-- id元素:配置主键映射的属性
+				name: 填写主键对应属性名
+				column(可选): 填写表中的主键列名.默认值:列名会默认使用属性名
+				type(可选):填写列(属性)的类型.hibernate会自动检测实体的属性类型.
+						每个类型有三种填法: java类型|hibernate类型|数据库类型
+				not-null(可选):配置该属性(列)是否不能为空. 默认值:false
+				length(可选):配置数据库中列的长度. 默认值:使用数据库类型的最大长度
+		 -->
+		<id name="node_oid"  >
+			<!-- generator:主键生成策略-->
+			<generator class="assigned"></generator><!-- 主键生成策略assigned:自己生成主键-->
+		</id>
+		<!-- property元素:除id之外的普通属性映射
+				name: 填写属性名
+				column(可选): 填写列名
+				type(可选):填写列(属性)的类型.hibernate会自动检测实体的属性类型.
+						每个类型有三种填法: java类型|hibernate类型|数据库类型
+				not-null(可选):配置该属性(列)是否不能为空. 默认值:false
+				length(可选):配置数据库中列的长度. 默认值:使用数据库类型的最大长度
+		 -->
+		
+		<property name="desc_type" column="desc_type" ></property>
+		<property name="desc_version" column="desc_version" ></property>
+		<property name="desc_chanum" column="desc_chanum" ></property>
+		<property name="desc_powertype" column="desc_powertype" ></property>
+		<property name="desc_outshell" column="desc_outshell" ></property>
+		<property name="desc_wireless" column="desc_wireless" ></property>
+		<property name="desc_explos" column="desc_explos" ></property>
+		<property name="node_coding" column="node_coding" ></property>
+			<property name="node_order"  ></property>
+			<property name="birth_date"></property>
+			<property name="manuf_date"></property>
+	</class>
+</hibernate-mapping>

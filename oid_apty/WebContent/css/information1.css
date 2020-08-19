@@ -1,0 +1,60 @@
+<style>
+		
+			#father{
+				border: 1px ;
+				width: 1300px;
+				height: 1000px;
+				margin:auto;
+				
+			}
+			#top{
+				border: 1px;
+				width: 1300px;
+				height: 146px;
+				background-color: paleturquoise;
+				padding-top: 78px;
+				font-size: 30px;
+			}
+		
+			#middle{
+				border: 1px;
+				width: 1300px;
+				height: 400px;
+				
+			}
+		#left{
+			border: 1px solid gray;
+			width: 540px;
+			height: 400px;
+			float: left;
+			text-align: center;
+		}
+		#right{
+			border: 1px solid gray;
+			width: 756px;
+			height: 400px;
+			float: right;
+			
+		}
+		.top{
+		border: 1px ;
+			width: 756px;
+			height: 67px;
+			font-size: 20px;
+			
+			
+		}
+		.middle{
+			border: 1px ;
+			float: none;
+			width: 756px;
+			height: 160px;
+			text-align: center;
+		}
+		.bottom{
+			
+			float: none;
+			width: 756px;
+			height: 156px;
+		}
+		</style>

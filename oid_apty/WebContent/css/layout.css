@@ -1,0 +1,86 @@
+body {
+
+    background:#f0eef5;
+    color: #7d8b8d;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    min-height: 101%;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px;
+}
+#header{
+	background-color: #169fe6;
+    height: 60px;   
+    border: 1px solid #138cca;
+    border-left: none;
+    border-right: none;
+}
+
+.t{
+float:left;
+width:100%;
+height:10px;
+overflow:hidden; /*解决IE小于18px时按照18px算得兼容性问题 */
+clear:both;
+}
+#containter {
+width:960px;   /* height:800px; 暂时tmp background:red; */
+margin:0 auto;
+text-align:left /*在容器中调回，解决的兼容性问题*/
+}
+
+
+#content {
+width:100%;
+
+}
+#main{
+float:left;
+width:750px;
+
+
+}
+.up{
+float:left;
+width:750px;
+height:50px;
+background:gray;
+}
+.left{
+float:left;
+width:440px;
+height:350px;
+background:#fff url(../images/node.jpg) no-repeat;
+}
+
+.right{
+float:right;
+width:300px;
+height:350px;
+background:#fff;
+}
+.bottom{
+float:left;
+width:750px;
+height:463px;
+background:#fff;
+border: 1px solid #138cca;
+}
+
+#barside{
+float:right;
+width:200px;
+height:884px;
+background:#169fe6;
+
+}
+#footer {
+float:left;
+width:100%;
+height:100px;/*tmp*/
+background:gray;
+} 
